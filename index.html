@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배은미의 홈페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white; /* 글씨 색상 */
+            cursor: pointer; /* 클릭 가능한 커서로 변경 */
+        }
+
+        .image-container img {
+            width: 100%; /* 이미지 너비 조정 */
+            height: auto; /* 자동 높이 조정 */
+        }
+
+        .overlay {
+            position: absolute;
+            font-size: 100pt; 
+            top: 10%; /* 수직 중앙 */
+            left: 50%; /* 수평 중앙 */
+            transform: translate(-50%, -50%); /* 정확히 중앙에 위치 */
+            background-color: rgba(0, 0, 0, 0); /* 반투명 배경 */
+            padding: 10px; /* 패딩 추가 */
+            
+        }
+        .overlay a{
+            color: black;
+            font-size: 100pt;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="image-container" onclick="goToWebsite()">
+            <img src="https://i.pinimg.com/originals/23/0d/df/230ddfa117399807e90740e0251a48cf.jpg" alt="설명 텍스트">
+            <div class="overlay" >
+               <a href="about.html"> 환영합니다!</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 내 웹사이트</p>
+    </footer>
+</body>
+</html>
